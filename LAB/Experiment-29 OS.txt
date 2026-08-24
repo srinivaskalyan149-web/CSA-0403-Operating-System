@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    int semaphore=1;
+    if(semaphore){
+        semaphore=0;
+        printf("Process Executing\n");
+        semaphore=1;
+    }
+}
