@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    FILE *fp;
+    char s[20];
+    fp = fopen("test.txt", "w");
+    if (fp == NULL) {
+        printf("File cannot be opened");
+        return 1;
+    }
+    fprintf(fp, "Hello OS");
+    fclose(fp);
+    fp = fopen("test.txt", "r");
+    if (fp == NULL) {
+        printf("File cannot be opened");
+        return 1;
+    }
+    fscanf(fp, "%19s", s);
+    printf("%s", s);
+    fclose(fp);
+    return 0;
+}
