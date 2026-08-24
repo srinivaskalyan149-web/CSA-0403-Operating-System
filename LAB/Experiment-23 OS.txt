@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int b[5]={100,500,200,300,600};
+    int p,i;
+    scanf("%d",&p);
+    for(i=0;i<5;i++)
+        if(b[i]>=p){
+            printf("Allocated in Block %d",i+1);
+            break;
+        }
+}
