@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char str[100]="Operating System Lab";
+    char key[20];
+    scanf("%s",key);
+    if(strstr(str,key))
+        printf("Found");
+    else
+        printf("Not Found");
+}
