@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+    int data=100;
+
+    printf("Writer : %d\n",data);
+    printf("Reader : %d\n",data);
+
+    return 0;
+}
